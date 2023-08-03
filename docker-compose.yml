@@ -1,0 +1,25 @@
+version: '3'
+services:
+  sql-server-db:
+    build: ./sql
+    environment:
+      - SA_PASSWORD=&UPoWrls7is
+      - ACCEPT_EULA=Y
+    ports:
+      - 1433:1433
+  backend:
+    build: ./app
+    environment:
+      - SQL_SERVER_HOST=sql-server-db
+      - SQL_SERVER_USER=SA
+      - SQL_SERVER_PASSWORD=&UPoWrls7is
+    ports:
+      - 8080:8080
+    depends_on:
+      - sql-server-db
+  react-app:
+    build: ./react-app
+    ports:
+      - 3000:3000
+    depends_on:
+      - backend

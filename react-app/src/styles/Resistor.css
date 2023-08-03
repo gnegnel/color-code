@@ -1,0 +1,55 @@
+.resistor-container {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.resistor-cable {
+    height: 2px;
+    width: 33%;
+    background-color: black;
+    display: flex;
+    align-items: center;    
+
+}
+
+.resistor {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffdeda;
+    border: 2px solid #111;
+    width: 100%;
+    height: 50px;   
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.resistor-band {
+    height: 45px;
+    width: 25px;
+    margin-right: 15px;
+}
+
+.long-band {
+    height: 55px;
+}
+
+.spaced-band {
+    margin-left: auto;
+}
+
+
+.black { background-color: black; }
+.brown { background-color: brown; }
+.red { background-color: red; }
+.orange { background-color: orange; }
+.yellow { background-color: yellow; }
+.green { background-color: green; }
+.blue { background-color: blue; }
+.violet { background-color: violet; }
+.gray { background-color: gray; }
+.white { background-color: white; }
+.gold { background-color: gold; }
+.silver { background-color: silver; }
